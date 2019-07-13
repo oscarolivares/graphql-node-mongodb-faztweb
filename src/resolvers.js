@@ -1,3 +1,5 @@
+import { tasks } from "./sample-data";
+
 export const resolvers = {
   Query: {
     test1: () => {
@@ -11,6 +13,10 @@ export const resolvers = {
     },
     test4(root, { name }) {
       return `Ahora se usa el detructuring para especificar el argumento, el argumento fue: ${name}`
+    },
+
+    tasks() {
+      return tasks;
     }
   }
 };

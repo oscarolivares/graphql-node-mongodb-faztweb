@@ -1,0 +1,15 @@
+// Primeros tests
+{
+  test1
+  test2
+  test3(name: "prueba")
+  test4(name: "prueba2")
+}
+
+// Test con datos
+{
+  tasks {
+    title
+    description
+  }
+}

@@ -7,6 +7,14 @@ const typeDefs = `
     test2: String
     test3(name: String): String
     test4(name: String): String
+    tasks: [Task]
+  }
+
+  type Task {
+    _id: ID
+    title: String!
+    description: String!
+    number: Int
   }
 `;
 
