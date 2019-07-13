@@ -1,7 +1,16 @@
 export const resolvers = {
   Query: {
-    hello: () => {
-      return 'Hello World with GraphQL'
+    test1: () => {
+      return 'Método de objeto definido con la sintáxis de ES5'
+    },
+    test2() {
+      return 'Método de objeto definido con la sintáxis de ES6'
+    },
+    test3(root, args) {
+      return `Query que recibe argumentos, el argumento fue: ${args.name}`
+    },
+    test4(root, { name }) {
+      return `Ahora se usa el detructuring para especificar el argumento, el argumento fue: ${name}`
     }
   }
 };

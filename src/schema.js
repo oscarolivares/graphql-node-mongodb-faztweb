@@ -3,7 +3,10 @@ import { resolvers } from "./resolvers";
 
 const typeDefs = `
   type Query {
-    hello: String
+    test1: String
+    test2: String
+    test3(name: String): String
+    test4(name: String): String
   }
 `;
 
