@@ -13,3 +13,39 @@
     description
   }
 }
+
+// Mutación
+mutation {
+  createTask(input: {
+    // Definición de la entrada
+    title: "Task one"
+    description: "First task"
+  }) {
+    // Definición de la salida
+    _id
+    title
+    description
+    number
+  }
+}
+
+// Mutación y query
+mutation operation1 {
+  createTask(input: {
+    title: "Task one"
+    description: "First task"
+  }) {
+    _id
+    title
+    description
+    number
+  }
+}
+
+query operation2 {
+  tasks{
+    _id
+    title
+    description
+  }
+}
