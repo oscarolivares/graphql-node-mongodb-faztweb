@@ -49,3 +49,51 @@ query query-op {
     description
   }
 }
+
+// Ya trabajando con la DB
+query consultar {
+  Users{
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
+mutation crear {
+  createUser(input: {
+    firstname: "Jhon"
+    lastname: "Doe"
+    age: 23
+  }) {
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
+mutation eliminar {
+  deleteUser(_id: "5d2ab709cb92cf1f604b85f7") {
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
+mutation modificar {
+  updateUser(
+    _id: "5d2ab709cb92cf1f604b85f7",
+    input: {
+      firstname: "Ryan"
+      lastname: "Macklain"
+    }
+  ) {
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+ 
