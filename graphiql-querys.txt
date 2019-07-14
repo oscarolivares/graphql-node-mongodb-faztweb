@@ -30,7 +30,7 @@ mutation {
 }
 
 // Mutación y query
-mutation operation1 {
+mutation mutation-op {
   createTask(input: {
     title: "Task one"
     description: "First task"
@@ -42,7 +42,7 @@ mutation operation1 {
   }
 }
 
-query operation2 {
+query query-op {
   tasks{
     _id
     title
